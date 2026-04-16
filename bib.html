@@ -3,149 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>타이중 미슐랭 빕구르망 2025 가이드</title>
+<title>타이중 미슐랭 빕구르망 2025 · 23곳 완전 가이드</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --red:#C0392B; --red-pale:#fdf0ef;
+:root{
+  --bib:#E8401A; --bib-dark:#b83012; --bib-pale:#fff3f0;
   --gold:#D4A947; --gold-light:#f0d68a;
-  --bib:#E8401A; --bib-pale:#fff3f0;
   --ink:#1a1310; --ink-mid:#4a3f38; --ink-light:#8a7c75;
   --paper:#faf7f2; --paper-warm:#f5efe6;
   --white:#fff; --border:#ddd3c5;
-  --green:#2E7D32; --blue:#1565C0;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--paper);color:var(--ink);font-family:'DM Sans','Noto Serif KR',sans-serif;min-height:100vh;}
 
 /* TOP NAV */
-.top-nav{background:#111;border-bottom:1px solid rgba(255,255,255,.08);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:44px;}
-.top-nav .nav-logo{font-family:'Playfair Display',serif;font-size:13px;font-style:italic;color:rgba(255,255,255,.5);letter-spacing:1px;}
-.top-nav .nav-links{display:flex;gap:4px;}
+.top-nav{background:#111;border-bottom:1px solid rgba(255,255,255,.08);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:44px;position:sticky;top:0;z-index:100;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:13px;font-style:italic;color:rgba(255,255,255,.5);letter-spacing:1px;}
+.nav-links{display:flex;gap:4px;}
 .nav-link{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:2px;font-size:12px;letter-spacing:.5px;text-decoration:none;color:rgba(255,255,255,.6);transition:background .2s,color .2s;}
 .nav-link:hover{background:rgba(255,255,255,.08);color:#fff;}
 .nav-link.active-page{background:rgba(232,64,26,.25);color:#ff8c6a;border:1px solid rgba(232,64,26,.4);}
-.nav-link.plan-link{background:rgba(192,57,43,.15);color:rgba(255,255,255,.7);border:1px solid rgba(192,57,43,.3);}
-.nav-link.plan-link:hover{background:rgba(192,57,43,.3);color:#fff;}
+.nav-link.plan-link{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);}
+.nav-link.plan-link:hover{background:rgba(255,255,255,.12);color:#fff;}
 @media(max-width:640px){.top-nav{padding:0 16px;}.nav-link{padding:6px 10px;font-size:11px;}}
 
 /* HERO */
-.hero{background:#1a1310;color:#fff;padding:56px 40px 48px;position:relative;overflow:hidden;text-align:center;}
-.hero::before{content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 70% 55% at 50% 120%,rgba(232,64,26,.4) 0%,transparent 65%),
-             radial-gradient(ellipse 35% 35% at 85% 15%,rgba(212,169,71,.18) 0%,transparent 55%);
-  pointer-events:none;}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;
-  border:1px solid rgba(232,64,26,.6);background:rgba(232,64,26,.1);
-  color:#ff8c6a;font-size:11px;letter-spacing:3px;text-transform:uppercase;
-  padding:6px 18px;margin-bottom:20px;border-radius:2px;}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(32px,6vw,64px);font-weight:400;line-height:1.05;margin-bottom:8px;}
+.hero{background:#1a0e0b;color:#fff;padding:52px 40px 44px;position:relative;overflow:hidden;text-align:center;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 120%,rgba(232,64,26,.4) 0%,transparent 65%),radial-gradient(ellipse 35% 35% at 85% 15%,rgba(212,169,71,.18) 0%,transparent 55%);pointer-events:none;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(232,64,26,.6);background:rgba(232,64,26,.1);color:#ff8c6a;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:6px 18px;margin-bottom:20px;border-radius:2px;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(30px,5.5vw,58px);font-weight:400;line-height:1.05;margin-bottom:8px;}
 .hero h1 em{font-style:italic;color:var(--gold-light);}
 .hero-desc{font-size:13px;color:rgba(255,255,255,.5);letter-spacing:1px;margin-top:12px;}
-.hero-stats{display:flex;justify-content:center;gap:48px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);}
+.hero-stats{display:flex;justify-content:center;gap:48px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);}
 .stat{text-align:center;}
-.stat .num{font-family:'Playfair Display',serif;font-size:28px;color:#ff8c6a;}
+.stat .num{font-family:'Playfair Display',serif;font-size:26px;color:#ff8c6a;}
 .stat .lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:2px;}
-
-/* BIB EXPLANATION */
-.bib-explain{background:var(--bib-pale);border-left:4px solid var(--bib);padding:20px 28px;margin:40px 0 0;display:flex;align-items:flex-start;gap:16px;}
-.bib-icon{font-size:32px;flex-shrink:0;}
-.bib-explain h3{font-family:'Noto Serif KR',serif;font-size:15px;font-weight:700;color:var(--bib);margin-bottom:4px;}
-.bib-explain p{font-size:13px;color:var(--ink-mid);line-height:1.7;}
+@media(max-width:640px){.hero{padding:36px 20px 32px;}.hero-stats{gap:20px;}.stat .num{font-size:20px;}}
 
 /* CONTAINER */
 .container{max-width:1100px;margin:0 auto;padding:0 24px 80px;}
+@media(max-width:640px){.container{padding:0 16px 60px;}}
 
-/* FILTER TABS */
-.filter-bar{display:flex;flex-wrap:wrap;gap:8px;margin:40px 0 28px;align-items:center;}
-.filter-bar .filter-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-light);margin-right:8px;}
-.filter-btn{padding:7px 18px;border:1px solid var(--border);background:var(--white);border-radius:20px;
-  font-size:12px;color:var(--ink-mid);cursor:pointer;transition:all .2s;letter-spacing:.5px;}
-.filter-btn:hover,.filter-btn.active{background:var(--bib);border-color:var(--bib);color:#fff;}
+/* BIB EXPLAIN */
+.bib-explain{display:flex;align-items:flex-start;gap:16px;background:var(--bib-pale);border-left:4px solid var(--bib);padding:20px 24px;margin:40px 0 0;border-radius:0 3px 3px 0;}
+.bib-icon{font-size:30px;flex-shrink:0;}
+.bib-explain h3{font-family:'Noto Serif KR',serif;font-size:15px;font-weight:700;color:var(--bib);margin-bottom:4px;}
+.bib-explain p{font-size:13px;color:var(--ink-mid);line-height:1.7;}
 
-/* RESTAURANT GRID */
-.restaurant-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;}
+/* FILTER */
+.filter-wrap{margin:32px 0 24px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;}
+.filter-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-light);margin-right:4px;}
+.filter-btn{padding:7px 16px;border:1px solid var(--border);background:var(--white);border-radius:20px;font-size:12px;color:var(--ink-mid);cursor:pointer;transition:all .2s;letter-spacing:.3px;}
+.filter-btn:hover,.filter-btn.on{background:var(--bib);border-color:var(--bib);color:#fff;}
 
-/* RESTAURANT CARD */
-.rest-card{background:var(--white);border:1px solid var(--border);border-radius:3px;overflow:hidden;
-  transition:box-shadow .2s,transform .15s;display:flex;flex-direction:column;}
-.rest-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.1);transform:translateY(-3px);}
-.rest-card-header{padding:20px 20px 0;display:flex;justify-content:space-between;align-items:flex-start;}
-.rest-num{font-family:'Playfair Display',serif;font-size:13px;font-style:italic;color:var(--bib);
-  border:1px solid var(--bib);padding:2px 10px;border-radius:2px;}
-.rest-new{background:var(--bib);color:#fff;font-size:10px;letter-spacing:1px;text-transform:uppercase;
-  padding:3px 10px;border-radius:2px;}
-.rest-card-body{padding:16px 20px 0;}
-.rest-name{font-family:'Noto Serif KR',serif;font-size:17px;font-weight:700;color:var(--ink);margin-bottom:2px;}
-.rest-name-cn{font-size:12px;color:var(--ink-light);margin-bottom:10px;}
-.rest-cuisine{display:inline-block;background:var(--paper-warm);color:var(--ink-mid);
-  font-size:11px;letter-spacing:1px;padding:3px 10px;border-radius:2px;margin-bottom:12px;}
-.rest-desc{font-size:13px;color:var(--ink-mid);line-height:1.75;margin-bottom:14px;}
-.rest-menu{margin-bottom:16px;}
-.rest-menu h4{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--bib);font-weight:600;margin-bottom:8px;}
-.menu-item{display:flex;align-items:baseline;gap:8px;font-size:13px;color:var(--ink);padding:4px 0;border-bottom:1px dashed var(--border);}
+/* GRID */
+.rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px;}
+
+/* CARD */
+.rest-card{background:var(--white);border:1px solid var(--border);border-radius:3px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .15s;}
+.rest-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.1);transform:translateY(-2px);}
+.card-head{padding:16px 18px 0;display:flex;justify-content:space-between;align-items:center;}
+.card-num{font-family:'Playfair Display',serif;font-size:12px;font-style:italic;color:var(--bib);border:1px solid var(--bib);padding:2px 9px;border-radius:2px;}
+.card-badge{font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:2px;background:var(--bib);color:#fff;}
+.card-badge.cont{background:#2E7D32;}
+.card-body{padding:14px 18px 0;flex:1;}
+.card-name{font-family:'Noto Serif KR',serif;font-size:16px;font-weight:700;color:var(--ink);margin-bottom:2px;}
+.card-name-cn{font-size:12px;color:var(--ink-light);margin-bottom:10px;}
+.card-cuisine{display:inline-block;background:var(--paper-warm);color:var(--ink-mid);font-size:10px;letter-spacing:1px;padding:3px 9px;border-radius:2px;margin-bottom:10px;}
+.card-desc{font-size:13px;color:var(--ink-mid);line-height:1.72;margin-bottom:12px;}
+.menu-title{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--bib);font-weight:600;margin-bottom:7px;}
+.menu-list{margin-bottom:14px;}
+.menu-item{display:flex;align-items:baseline;gap:8px;font-size:12.5px;color:var(--ink);padding:3px 0;border-bottom:1px dashed var(--border);}
 .menu-item:last-child{border-bottom:none;}
 .menu-item .dish{flex:1;color:var(--ink-mid);}
-.menu-item .star{color:var(--gold);font-size:11px;}
-.rest-card-footer{margin-top:auto;padding:14px 20px;border-top:1px solid var(--border);background:var(--paper);}
-.rest-info{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;}
-.rest-info-item{font-size:11.5px;color:var(--ink-mid);display:flex;align-items:flex-start;gap:6px;}
-.rest-info-item .ico{font-size:13px;flex-shrink:0;margin-top:1px;}
-.rest-info-item .txt{line-height:1.5;}
-.rest-map-btn{display:flex;align-items:center;justify-content:center;gap:6px;
-  width:100%;padding:9px;background:var(--ink);color:#fff;border-radius:2px;
-  font-size:12px;letter-spacing:1px;text-decoration:none;transition:background .2s;}
-.rest-map-btn:hover{background:var(--bib);}
-.rest-rating{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--gold);}
+.menu-item .star{color:var(--gold);font-size:11px;white-space:nowrap;}
+.card-foot{margin-top:auto;padding:12px 18px;border-top:1px solid var(--border);background:var(--paper);}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:10px;}
+.info-item{font-size:11.5px;color:var(--ink-mid);display:flex;align-items:flex-start;gap:5px;line-height:1.5;}
+.info-item .ico{font-size:13px;flex-shrink:0;margin-top:1px;}
+.map-btn{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:9px;background:var(--ink);color:#fff;border-radius:2px;font-size:12px;letter-spacing:.8px;text-decoration:none;transition:background .2s;}
+.map-btn:hover{background:var(--bib);}
 
 /* SECTION TITLE */
-.section-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;
-  color:var(--ink);margin:48px 0 20px;display:flex;align-items:center;gap:16px;}
-.section-title::after{content:'';flex:1;height:1px;background:var(--border);}
+.sec-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:var(--ink);margin:48px 0 20px;display:flex;align-items:center;gap:14px;}
+.sec-title::after{content:'';flex:1;height:1px;background:var(--border);}
 
-/* SVG MAP */
-.map-wrap{background:var(--white);border:1px solid var(--border);border-radius:3px;overflow:hidden;margin-bottom:8px;}
-#bib-map{width:100%;display:block;}
-.map-marker{cursor:pointer;}
-.map-marker:hover circle{opacity:.8;}
-#bib-tooltip{position:fixed;background:var(--ink);color:#fff;padding:7px 13px;border-radius:3px;
-  font-size:12px;pointer-events:none;display:none;z-index:999;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.3);}
-#bib-tooltip small{display:block;font-size:10px;color:#ff8c6a;margin-top:2px;}
-
+/* FOOTER */
 footer{border-top:1px solid var(--border);padding:28px 40px;text-align:center;font-size:12px;color:var(--ink-light);}
-
-@media(max-width:640px){
-  .hero{padding:40px 20px 36px;} .hero-stats{gap:20px;}
-  .container{padding:0 16px 60px;}
-  .restaurant-grid{grid-template-columns:1fr;}
-  footer{padding:20px 16px;}
-}
+footer a{color:var(--bib);text-decoration:none;}
 </style>
 </head>
 <body>
 
-<div id="bib-tooltip"><small>클릭 → Google Maps</small></div>
-
+<!-- NAV -->
 <nav class="top-nav">
   <span class="nav-logo">🇹🇼 Taichung 2026</span>
   <div class="nav-links">
-    <a class="nav-link plan-link" href="index.html">🗓 여행 일정표</a>
-    <a class="nav-link active-page" href="bib.html">😋 미슐랭 빕구르망</a>
+    <a class="nav-link plan-link" href="taichung_travel_plan.html">🗓 여행 일정표</a>
+    <a class="nav-link active-page" href="taichung_michelin_bib.html">😋 미슐랭 빕구르망</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <header class="hero">
   <div class="hero-badge">🍽 Michelin Guide Taiwan 2025</div>
-  <h1>타이중 <em>빕구르망</em> 가이드</h1>
-  <div class="hero-desc">합리적인 가격에 훌륭한 요리 · Taichung Bib Gourmand Selection</div>
+  <h1>타이중 <em>빕구르망</em> 완전 가이드</h1>
+  <div class="hero-desc">합리적인 가격에 훌륭한 요리 · Taichung Bib Gourmand · 전체 23곳 수록</div>
   <div class="hero-stats">
-    <div class="stat"><div class="num">23</div><div class="lbl">타이중 선정 수</div></div>
-    <div class="stat"><div class="num">144</div><div class="lbl">대만 전체 선정 수</div></div>
-    <div class="stat"><div class="num">8th</div><div class="lbl">가이드 에디션</div></div>
-    <div class="stat"><div class="num">NT$1000</div><div class="lbl">이하 식사 기준</div></div>
+    <div class="stat"><div class="num">23</div><div class="lbl">타이중 선정</div></div>
+    <div class="stat"><div class="num">144</div><div class="lbl">대만 전체</div></div>
+    <div class="stat"><div class="num">NT$1,000</div><div class="lbl">이하 기준</div></div>
+    <div class="stat"><div class="num">8th</div><div class="lbl">2025 에디션</div></div>
   </div>
 </header>
 
@@ -156,488 +126,647 @@ footer{border-top:1px solid var(--border);padding:28px 40px;text-align:center;fo
     <div class="bib-icon">😋</div>
     <div>
       <h3>빕구르망(Bib Gourmand)이란?</h3>
-      <p>미슐랭 마스코트 비벤덤이 입맛을 다시는 픽토그램으로 표시되는 빕구르망은, <strong>합리적인 가격에 훌륭한 요리를 제공하는 레스토랑</strong>에 주어집니다. 대만 타이중에서는 <strong>NT$1,000(약 4만원) 이하</strong>로 훌륭한 식사를 즐길 수 있는 레스토랑들이 선정됩니다. 미슐랭 스타보다 접근하기 쉬우면서도 품질을 보증하는 인증입니다. 2025년 타이중에서는 총 <strong>23곳</strong>이 선정되었습니다.</p>
+      <p>미슐랭 마스코트 비벤덤이 입맛을 다시는 픽토그램. <strong>NT$1,000(약 4만원) 이하</strong>로 훌륭한 식사를 즐길 수 있는 레스토랑에 부여됩니다. 2025년 타이중에서는 <strong>23곳</strong>이 선정되었으며, 이 중 <strong>쿵푸 상하이 어묵</strong>이 신규 추가되었습니다.</p>
     </div>
   </div>
-
-  <!-- 전체 지도 -->
-  <h2 class="section-title">📍 빕구르망 레스토랑 위치</h2>
-  <p style="font-size:13px;color:var(--ink-light);margin-bottom:16px;">지도 위 마커 또는 레스토랑 카드 하단 버튼을 클릭하면 Google Maps에서 위치가 열립니다.</p>
-
-  <div class="map-wrap">
-    <svg id="bib-map" viewBox="0 0 820 430" xmlns="http://www.w3.org/2000/svg" style="font-family:'DM Sans',sans-serif;">
-      <!-- 배경 -->
-      <rect width="820" height="430" fill="#dde8d0"/>
-      <!-- 타이완 해협 -->
-      <path d="M0,0 L145,0 L134,50 L118,115 L104,180 L98,250 L88,320 L76,395 L0,430Z" fill="#b0cfe8" opacity=".75"/>
-      <!-- 도심 영역 -->
-      <rect x="190" y="110" width="300" height="230" rx="7" fill="#f0e8d8" opacity=".35" stroke="#bfb09a" stroke-width="1.5" stroke-dasharray="5,3"/>
-      <text x="340" y="130" text-anchor="middle" font-size="10" fill="#7a6a58" opacity=".55" font-weight="600" letter-spacing="1">台中市 도심</text>
-      <!-- 도로 -->
-      <line x1="308" y1="60" x2="308" y2="420" stroke="#cfc4b0" stroke-width="5"/>
-      <line x1="145" y1="215" x2="510" y2="215" stroke="#cfc4b0" stroke-width="4"/>
-      <line x1="145" y1="268" x2="510" y2="268" stroke="#cfc4b0" stroke-width="3"/>
-      <path d="M182,155 Q228,127 318,132 Q428,140 462,196 Q490,240 468,295 Q445,358 362,376 Q278,395 210,364 Q153,336 147,275 Q137,212 182,155Z" fill="none" stroke="#bfb09a" stroke-width="2" stroke-dasharray="7,4"/>
-      <!-- 지역 라벨 -->
-      <text x="56" y="210" text-anchor="middle" font-size="10" fill="#3a6a8a" opacity=".8" transform="rotate(-90 56 210)">臺灣海峽</text>
-      <text x="162" y="95" font-size="9" fill="#8a9880" opacity=".7">清水區</text>
-
-      <!-- ① 심원춘 沁園春 -->
-      <g class="map-marker" data-name="심원춘 (沁園春)" data-url="https://maps.google.com/?q=24.1395525,120.6826383" onclick="openBibMap(this)">
-        <circle cx="328" cy="198" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="328" y="202" text-anchor="middle" font-size="10" fill="white" font-weight="700">1</text>
-        <text x="328" y="220" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">심원춘</text>
-      </g>
-
-      <!-- ② 쭤위에러우 醉月樓 -->
-      <g class="map-marker" data-name="쭤위에러우 (醉月樓)" data-url="https://maps.google.com/?q=24.137835,120.6835591" onclick="openBibMap(this)">
-        <circle cx="330" cy="225" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="330" y="229" text-anchor="middle" font-size="10" fill="white" font-weight="700">2</text>
-        <text x="388" y="225" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">쭤위에러우</text>
-      </g>
-
-      <!-- ③ 푸딘왕 福鼎王 -->
-      <g class="map-marker" data-name="푸딘왕 (福鼎王)" data-url="https://maps.google.com/?q=24.1452488,120.6765902" onclick="openBibMap(this)">
-        <circle cx="305" cy="182" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="305" y="186" text-anchor="middle" font-size="10" fill="white" font-weight="700">3</text>
-        <text x="247" y="182" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">푸딘왕</text>
-      </g>
-
-      <!-- ④ 타이중 고기완자 台中肉圓 -->
-      <g class="map-marker" data-name="타이중 고기완자 (台中肉圓)" data-url="https://maps.google.com/?q=24.134469,120.6825714" onclick="openBibMap(this)">
-        <circle cx="330" cy="245" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="330" y="249" text-anchor="middle" font-size="10" fill="white" font-weight="700">4</text>
-        <text x="390" y="244" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">타이중육환</text>
-      </g>
-
-      <!-- ⑤ 칠리진 Chilliesine -->
-      <g class="map-marker" data-name="칠리진 (Chilliesine)" data-url="https://maps.google.com/?q=24.1410876,120.6593964" onclick="openBibMap(this)">
-        <circle cx="258" cy="228" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="258" y="232" text-anchor="middle" font-size="10" fill="white" font-weight="700">5</text>
-        <text x="258" y="250" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">칠리진</text>
-      </g>
-
-      <!-- ⑥ 신위안 新源 -->
-      <g class="map-marker" data-name="신위안 (新源)" data-url="https://maps.google.com/?q=24.1481891,120.6683889" onclick="openBibMap(this)">
-        <circle cx="282" cy="165" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="282" y="169" text-anchor="middle" font-size="10" fill="white" font-weight="700">6</text>
-        <text x="282" y="187" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">신위안</text>
-      </g>
-
-      <!-- ⑦ 쿵푸 어묵 功夫魚丸 -->
-      <g class="map-marker" data-name="쿵푸 어묵 (功夫魚丸)" data-url="https://maps.google.com/?q=24.1519346,120.6602712" onclick="openBibMap(this)">
-        <circle cx="264" cy="148" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="264" y="152" text-anchor="middle" font-size="10" fill="white" font-weight="700">7</text>
-        <text x="210" y="148" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">쿵푸어묵</text>
-      </g>
-
-      <!-- ⑧ 루위안 鹿苑 -->
-      <g class="map-marker" data-name="루위안 (鹿苑)" data-url="https://maps.google.com/?q=24.1480,120.6680" onclick="openBibMap(this)">
-        <circle cx="282" cy="185" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="282" y="189" text-anchor="middle" font-size="10" fill="white" font-weight="700">8</text>
-        <text x="224" y="185" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">루위안</text>
-      </g>
-
-      <!-- ⑨ 창창키친 長長廚房 -->
-      <g class="map-marker" data-name="창창키친 (長長廚房)" data-url="https://maps.google.com/?q=24.1490,120.6720" onclick="openBibMap(this)">
-        <circle cx="295" cy="172" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="295" y="176" text-anchor="middle" font-size="10" fill="white" font-weight="700">9</text>
-        <text x="350" y="157" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">창창키친</text>
-      </g>
-
-      <!-- ⑩ 푸쥬안위안 扶剪園 -->
-      <g class="map-marker" data-name="푸쥬안위안 (扶剪園 족발)" data-url="https://maps.google.com/?q=24.147,120.668" onclick="openBibMap(this)">
-        <circle cx="278" cy="200" r="13" fill="#E8401A" stroke="white" stroke-width="2.5"/>
-        <text x="278" y="205" text-anchor="middle" font-size="10" fill="white" font-weight="700">10</text>
-        <text x="220" y="205" text-anchor="middle" font-size="8.5" fill="#E8401A" font-weight="600">푸쥬안위안</text>
-      </g>
-
-      <!-- 범례 -->
-      <rect x="18" y="16" width="148" height="68" rx="4" fill="white" opacity=".9"/>
-      <circle cx="34" cy="36" r="8" fill="#E8401A"/>
-      <text x="48" y="40" font-size="10" fill="#4a3f38" font-weight="600">빕구르망 선정 레스토랑</text>
-      <text x="28" y="58" font-size="9" fill="#8a7c75">📍 마커 클릭 → Google Maps</text>
-      <text x="28" y="74" font-size="9" fill="#8a7c75">총 23곳 중 주요 10곳 표시</text>
-    </svg>
-  </div>
-  <p style="font-size:11px;color:var(--ink-light);text-align:right;margin-bottom:32px;">※ 지도는 주요 레스토랑 위치를 개략적으로 표시한 것입니다.</p>
 
   <!-- FILTER -->
-  <div class="filter-bar">
+  <div class="filter-wrap">
     <span class="filter-label">요리 분류</span>
-    <button class="filter-btn active" onclick="filterCards('all',this)">전체 보기</button>
-    <button class="filter-btn" onclick="filterCards('대만요리',this)">🇹🇼 대만요리</button>
-    <button class="filter-btn" onclick="filterCards('장저요리',this)">🥢 장저(상하이)요리</button>
-    <button class="filter-btn" onclick="filterCards('분식',this)">🍜 면·분식</button>
-    <button class="filter-btn" onclick="filterCards('인도요리',this)">🌶 인도요리</button>
+    <button class="filter-btn on" onclick="filter('all',this)">전체 (23)</button>
+    <button class="filter-btn" onclick="filter('대만',this)">🇹🇼 대만요리</button>
+    <button class="filter-btn" onclick="filter('장저',this)">🥢 장저·상하이</button>
+    <button class="filter-btn" onclick="filter('베이징',this)">🏮 베이징요리</button>
+    <button class="filter-btn" onclick="filter('면·분식',this)">🍜 면·분식</button>
+    <button class="filter-btn" onclick="filter('인도',this)">🌶 인도요리</button>
+    <button class="filter-btn" onclick="filter('채식',this)">🌿 채식</button>
   </div>
 
-  <!-- RESTAURANT LIST -->
-  <div class="restaurant-grid" id="rest-grid">
+  <div class="rest-grid" id="grid">
 
-    <!-- 1. 심원춘 -->
-    <div class="rest-card" data-cuisine="장저요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 01</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">심원춘 (沁園春)</div>
-        <div class="rest-name-cn">Qin Yuan Chun · 중구 타이완대로 1단 129호</div>
-        <span class="rest-cuisine">장저(江浙) 요리</span>
-        <p class="rest-desc">1949년 창업한 타이중의 노포. 상하이·장쑤·저장 스타일의 중국요리를 현대적으로 재해석합니다. 2025 미슐랭 빕구르망 <strong>연속 선정</strong>. 딤섬과 샤오롱바오가 특히 유명하며, 국물 요리와 볶음밥도 높은 평가를 받습니다.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
-          <div class="menu-item"><span class="dish">샤오롱바오 (小籠包) — 육즙 가득 딤섬</span><span class="star">★ 필수</span></div>
-          <div class="menu-item"><span class="dish">탕추파이구 (糖醋排骨) — 달콤새콤 탕수갈비</span><span class="star">★ 인기</span></div>
-          <div class="menu-item"><span class="dish">해삼조림 — 미슐랭 평가원 추천</span><span class="star">★ 추천</span></div>
-          <div class="menu-item"><span class="dish">장미빵 (玫瑰花捲)</span></div>
+    <!-- 01 심원춘 -->
+    <div class="rest-card" data-c="장저">
+      <div class="card-head"><span class="card-num">No.01</span></div>
+      <div class="card-body">
+        <div class="card-name">심원춘 (沁園春)</div>
+        <div class="card-name-cn">Qin Yuan Chun · 중구 타이완대도 1단 129호</div>
+        <span class="card-cuisine">장저(江浙) 요리</span>
+        <p class="card-desc">1949년 창업한 장저·상하이 요리의 명가. 샤오롱바오와 딤섬이 특히 유명하며 미슐랭 빕구르망 연속 선정. 1인 최소 NT$600 주문 필요, 예약 강력 권장.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">샤오롱바오 (小籠包)</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">탕추파이구 (糖醋排骨) 달콤새콤 갈비</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">해삼조림 · 장미빵</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">11:00–14:00 / 17:00–21:00<br>수요일 휴무</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$600–1,000<br>현금 전용</span></div>
-          <div class="rest-info-item"><span class="ico">📞</span><span class="txt">+886 4 2220 0735</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">★ 4.2 (4,184 리뷰)<br>예약 강력 추천</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–14:00 / 17:00–21:00<br>수요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$600–1,000<br>현금 전용</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.2 (4,184 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2220 0735</span></div>
         </div>
-        <a class="rest-map-btn" href="https://maps.google.com/?q=24.1395525,120.6826383" target="_blank" rel="noopener">
-          📍 Google Maps에서 위치 보기
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1395525,120.6826383" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-    <!-- 2. 쭤위에러우 -->
-    <div class="rest-card" data-cuisine="대만요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 02</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">쭤위에러우 (醉月樓)</div>
-        <div class="rest-name-cn">Cui Yue Lou · 중구 중산로 20호 2층 (궁원안과 2층)</div>
-        <span class="rest-cuisine">대만 창의 요리</span>
-        <p class="rest-desc">유명 관광지 궁원안과(미야하라) 2층에 위치한 레스토랑. <strong>2021–2025년 5년 연속 빕구르망</strong> 선정. 대만 전통 요리를 현대적으로 재해석한 창의적인 코스 요리를 제공합니다. 분위기 있는 공간에서 즐기는 가성비 최강 코스 식사.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
-          <div class="menu-item"><span class="dish">소흥주 돼지고기 조림 — 시그니처 딤섬</span><span class="star">★ 필수</span></div>
-          <div class="menu-item"><span class="dish">얀수이지 (鹽水雞) — 소금물 닭고기</span><span class="star">★ 인기</span></div>
-          <div class="menu-item"><span class="dish">고량주 소시지 (高粱腸)</span></div>
-          <div class="menu-item"><span class="dish">뤄보스빙 (蘿蔔絲餅) — 무채 파이</span></div>
+    <!-- 02 쭤위에러우 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.02</span><span class="card-badge cont">5년 연속</span></div>
+      <div class="card-body">
+        <div class="card-name">쭤위에러우 (醉月樓)</div>
+        <div class="card-name-cn">Cui Yue Lou · 중구 중산로 20호 2층 (궁원안과 2층)</div>
+        <span class="card-cuisine">대만 창의 요리</span>
+        <p class="card-desc">궁원안과(미야하라) 2층 레스토랑. 2021–2025년 5년 연속 빕구르망 선정. 대만 전통 요리를 현대적으로 재해석한 창의적 코스 요리.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">소흥주 돼지고기 조림</span><span class="star">★ 시그니처</span></div>
+          <div class="menu-item"><span class="dish">얀수이지 (鹽水雞) · 고량주 소시지</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">뤄보스빙 (蘿蔔絲餅) 무채 파이</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">11:00–21:00<br>매일 영업</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$500–900<br>세트 메뉴 있음</span></div>
-          <div class="rest-info-item"><span class="ico">📞</span><span class="txt">+886 4 2227 1926</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">★ 4.4 (1,265 리뷰)<br>예약 권장</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–21:00<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$500–900</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.4 (1,265 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2227 1926</span></div>
         </div>
-        <a class="rest-map-btn" href="https://maps.google.com/?q=24.137835,120.6835591" target="_blank" rel="noopener">
-          📍 Google Maps에서 위치 보기
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.137835,120.6835591" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-    <!-- 3. 푸딘왕 -->
-    <div class="rest-card" data-cuisine="대만요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 03</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">푸딘왕 (福鼎王)</div>
-        <div class="rest-name-cn">Fu Din Wang · 중구 타이완대도 1단 560호</div>
-        <span class="rest-cuisine">대만 브레이즈 요리</span>
-        <p class="rest-desc">타이중 현지인들이 줄서서 먹는 족발 명가. 간장·빙탕·고추·파로 만든 '황금 육수(liquid gold)'에 오종일 족발과 앞다리살을 졸여냅니다. 셀프서비스 방식의 소박한 공간이지만 미슐랭이 인정한 맛집. 나혼자산다 등 한국 예능에도 소개됨.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
-          <div class="menu-item"><span class="dish">족발 (豬腳) — 간장 졸임 명물</span><span class="star">★ 필수</span></div>
-          <div class="menu-item"><span class="dish">앞다리살 (前腿肉) — 지방·껍질·살 균형</span><span class="star">★ 인기</span></div>
-          <div class="menu-item"><span class="dish">루러우판 (魯肉飯) — 돼지고기 덮밥</span></div>
-          <div class="menu-item"><span class="dish">러우짜오미셴 (肉燥米線) — 소면</span></div>
+    <!-- 03 푸딘왕 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.03</span></div>
+      <div class="card-body">
+        <div class="card-name">푸딘왕 (福鼎王)</div>
+        <div class="card-name-cn">Fu Din Wang · 중구 타이완대도 1단 560호</div>
+        <span class="card-cuisine">대만 브레이즈 요리</span>
+        <p class="card-desc">현지인이 줄서서 먹는 족발 명가. 간장·빙탕·고추·파로 만든 '황금 육수'에 온종일 족발·앞다리살을 졸여냅니다. 셀프서비스, 한국 예능에도 소개된 유명 맛집.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">족발 (豬腳) 간장 졸임</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">앞다리살 (前腿肉)</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">루러우판 (魯肉飯) 덮밥</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">11:00–14:30 / 16:30–19:30<br>일요일 휴무</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$150–350<br>셀프서비스</span></div>
-          <div class="rest-info-item"><span class="ico">📞</span><span class="txt">+886 4 2225 3188</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">★ 4.2 (3,297 리뷰)<br>줄 대기 예상</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–14:30 / 16:30–19:30<br>일요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$150–350</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.2 (3,297 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2225 3188</span></div>
         </div>
-        <a class="rest-map-btn" href="https://maps.google.com/?q=24.1452488,120.6765902" target="_blank" rel="noopener">
-          📍 Google Maps에서 위치 보기
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1452488,120.6765902" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-    <!-- 4. 타이중 고기완자 -->
-    <div class="rest-card" data-cuisine="대만요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 04</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">타이중 육환 (台中肉圓)</div>
-        <div class="rest-name-cn">Taichung Rou Yuan · 남구 부흥로 3단 529호</div>
-        <span class="rest-cuisine">대만 길거리 분식</span>
-        <p class="rest-desc">약 90년 역사의 타이중 명물 고기완자(肉圓) 전문점. 타피오카 전분 피 안에 돼지고기를 채운 쫄깃한 완자에 달콤짭짤한 특제 소스를 곁들여 먹는 타이중식 향토 음식. 심플한 메뉴이지만 미슐랭이 꾸준히 인정하는 가성비 맛집.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
-          <div class="menu-item"><span class="dish">육환 (肉圓) — 고기완자, NT$50</span><span class="star">★ 필수</span></div>
+    <!-- 04 타이중 육환 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.04</span></div>
+      <div class="card-body">
+        <div class="card-name">타이중 육환 (台中肉圓)</div>
+        <div class="card-name-cn">Taichung Rou Yuan · 남구 부흥로 3단 529호</div>
+        <span class="card-cuisine">대만 향토 분식</span>
+        <p class="card-desc">약 90년 역사의 타이중 명물 고기완자 전문점. 타피오카 전분 피 안에 돼지고기를 채운 쫄깃한 완자. 3가지 메뉴(육환·어묵탕·유리면)만 운영하는 단순하지만 미슐랭이 인정한 가성비 명가.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">육환 (肉圓) NT$50</span><span class="star">★ 필수</span></div>
           <div class="menu-item"><span class="dish">어묵탕 (魚丸湯)</span><span class="star">★ 세트</span></div>
           <div class="menu-item"><span class="dish">유리면 수프 (冬粉湯)</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">10:30–19:00<br>매일 영업</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$50–150<br>초저가</span></div>
-          <div class="rest-info-item"><span class="ico">📞</span><span class="txt">+886 4 2220 7138</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">★ 4.1 (9,854 리뷰)<br>현지인 맛집</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>10:30–19:00<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$50–150<br>초저가</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.1 (9,854 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2220 7138</span></div>
         </div>
-        <a class="rest-map-btn" href="https://maps.google.com/?q=24.134469,120.6825714" target="_blank" rel="noopener">
-          📍 Google Maps에서 위치 보기
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.134469,120.6825714" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-    <!-- 5. 칠리진 -->
-    <div class="rest-card" data-cuisine="인도요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 05</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">칠리진 (Chilliesine)</div>
-        <div class="rest-name-cn">서구 춘중가 47호 (+ 시툰 지점)</div>
-        <span class="rest-cuisine">인도 요리</span>
-        <p class="rest-desc">2015년부터 타이중에서 정통 인도 요리를 선보이는 레스토랑. 인도 북부·남부 출신 셰프팀이 현지에서 직접 가져온 향신료만 사용합니다. 비건·채식 메뉴도 풍부하고 매운 정도 조절 가능. 미슐랭 빕구르망 연속 선정.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
-          <div class="menu-item"><span class="dish">탄두리 치킨 — 향긋하고 강렬한 풍미</span><span class="star">★ 필수</span></div>
-          <div class="menu-item"><span class="dish">차나 마살라 — 병아리콩 카레</span><span class="star">★ 인기</span></div>
-          <div class="menu-item"><span class="dish">팔락 파니르 — 시금치 치즈 카레</span></div>
+    <!-- 05 칠리진 -->
+    <div class="rest-card" data-c="인도">
+      <div class="card-head"><span class="card-num">No.05</span></div>
+      <div class="card-body">
+        <div class="card-name">칠리진 (Chilliesine)</div>
+        <div class="card-name-cn">서구 춘중가 47호</div>
+        <span class="card-cuisine">인도 요리</span>
+        <p class="card-desc">2015년부터 타이중에서 정통 인도 요리를 선보이는 레스토랑. 북부·남부 인도 셰프팀, 현지에서 직접 가져온 향신료 사용. 비건·채식 메뉴 풍부, 매운 정도 조절 가능.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">탄두리 치킨</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">차나 마살라 · 팔락 파니르</span><span class="star">★ 인기</span></div>
           <div class="menu-item"><span class="dish">버터 치킨 + 나안</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">11:00–14:30 / 17:00–21:00<br>매일 영업</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$300–600</span></div>
-          <div class="rest-info-item"><span class="ico">📞</span><span class="txt">+886 4 2377 0007</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">★ 4.8 (9,559 리뷰)<br>매우 높은 평점</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–14:30 / 17:00–21:00<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$300–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.8 (9,559 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2377 0007</span></div>
         </div>
-        <a class="rest-map-btn" href="https://maps.google.com/?q=24.1410876,120.6593964" target="_blank" rel="noopener">
-          📍 Google Maps에서 위치 보기
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1410876,120.6593964" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-    <!-- 6. 신위안 -->
-    <div class="rest-card" data-cuisine="대만요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 06</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">신위안 (新源)</div>
-        <div class="rest-name-cn">Shin Yuan · 서구 민성북로 106호</div>
-        <span class="rest-cuisine">대만 가정식</span>
-        <p class="rest-desc">타이중을 대표하는 대만 가정식 레스토랑. 제철 신선 식재료를 이용한 볶음, 탕, 구이 요리가 균형 있게 구성되어 있습니다. 미슐랭 빕구르망 장기 선정 맛집. 채식 메뉴도 제공하여 다양한 식습관의 손님도 편히 방문 가능.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
+    <!-- 06 신위안 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.06</span></div>
+      <div class="card-body">
+        <div class="card-name">신위안 (新源)</div>
+        <div class="card-name-cn">Shin Yuan · 서구 민성북로 106호</div>
+        <span class="card-cuisine">대만 가정식</span>
+        <p class="card-desc">제철 신선 식재료를 이용한 볶음·탕·구이 요리가 균형 있게 구성된 대만 가정식 레스토랑. 채식 메뉴도 제공. 미슐랭 빕구르망 장기 연속 선정.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
           <div class="menu-item"><span class="dish">타로코코넛밀크 닭조림</span><span class="star">★ 시그니처</span></div>
           <div class="menu-item"><span class="dish">흑마늘 닭국물 (黑蒜雞湯)</span><span class="star">★ 인기</span></div>
           <div class="menu-item"><span class="dish">파인애플 오리 볶음</span></div>
-          <div class="menu-item"><span class="dish">계란두부 볶음</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">11:30–20:30<br>매일 영업</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$300–600</span></div>
-          <div class="rest-info-item"><span class="ico">📞</span><span class="txt">+886 4 2302 9989</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">★ 4.8 (6,743 리뷰)<br>로컬 인기 맛집</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:30–20:30<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$300–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.8 (6,743 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2302 9989</span></div>
         </div>
-        <a class="rest-map-btn" href="https://maps.google.com/?q=24.1481891,120.6683889" target="_blank" rel="noopener">
-          📍 Google Maps에서 위치 보기
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1481891,120.6683889" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-    <!-- 7. 쿵푸 상하이 어묵 -->
-    <div class="rest-card" data-cuisine="분식">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 07</span>
-        <span class="rest-new">2025 신규</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">쿵푸 상하이 어묵 (功夫上海魚丸)</div>
-        <div class="rest-name-cn">Kung Fu Shanghai Fish Ball · 서구 중미가 380호</div>
-        <span class="rest-cuisine">면·만두 요리</span>
-        <p class="rest-desc">수이난 시장 앞 레트로 인테리어와 손수레가 특징인 어묵 전문점. 10년 넘게 어묵·완탕·소스를 직접 손으로 만들어왔습니다. 2025년 미슐랭 빕구르망 <strong>신규 선정</strong>. 파기름에 비벼 먹는 쫄깃한 면이 시그니처.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
+    <!-- 07 쿵푸 상하이 어묵 (2025 신규) -->
+    <div class="rest-card" data-c="면·분식">
+      <div class="card-head"><span class="card-num">No.07</span><span class="card-badge">2025 신규</span></div>
+      <div class="card-body">
+        <div class="card-name">쿵푸 상하이 어묵 (功夫上海魚丸)</div>
+        <div class="card-name-cn">Kung Fu Shanghai Fish Ball · 서구 중미가 380호</div>
+        <span class="card-cuisine">면·어묵 요리</span>
+        <p class="card-desc">10년 넘게 어묵·완탕·소스를 직접 손으로 만드는 레트로 감성 어묵 전문점. 2025년 타이중 유일 신규 빕구르망 선정. 파기름 비빔면이 시그니처.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
           <div class="menu-item"><span class="dish">파기름 비빔면 (蔥油拌麵)</span><span class="star">★ 시그니처</span></div>
-          <div class="menu-item"><span class="dish">청새치 어묵 수프 — 갓 만든 어묵</span><span class="star">★ 필수</span></div>
-          <div class="menu-item"><span class="dish">완탕 (雲吞) — 수제 만두피</span></div>
+          <div class="menu-item"><span class="dish">청새치 어묵 수프</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">수제 완탕 (雲吞)</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">11:30–14:00 / 17:00–20:00<br>일요일 휴무</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$150–300</span></div>
-          <div class="rest-info-item"><span class="ico">📞</span><span class="txt">+886 932 618 038</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">★ 4.2 (955 리뷰)<br>2025 신규 선정</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:30–14:00 / 17:00–20:00<br>일요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$150–300</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.2 (955 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 932 618 038</span></div>
         </div>
-        <a class="rest-map-btn" href="https://maps.google.com/?q=24.1519346,120.6602712" target="_blank" rel="noopener">
-          📍 Google Maps에서 위치 보기
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1519346,120.6602712" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-    <!-- 8. 루위안 -->
-    <div class="rest-card" data-cuisine="장저요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 08</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">루위안 (鹿苑)</div>
-        <div class="rest-name-cn">Lu Yuan · 서구 민성북로 일대</div>
-        <span class="rest-cuisine">장저(江浙) 가정요리</span>
-        <p class="rest-desc">30년 이상 경력의 주방팀이 루창설 셰프의 비전을 이어가는 장저 가정식 레스토랑. 깊은 불 조절과 정확한 화력으로 완성하는 클래식 요리. 파기름을 두른 붕어조림, 닝보식 볶음장어, 수세미 건관자 등이 미슐랭 평가원에게 깊은 인상을 남겼습니다.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
-          <div class="menu-item"><span class="dish">파기름 붕어조림 — 알이 가득하고 뼈가 바삭</span><span class="star">★ 필수</span></div>
+    <!-- 08 루위안 -->
+    <div class="rest-card" data-c="장저">
+      <div class="card-head"><span class="card-num">No.08</span></div>
+      <div class="card-body">
+        <div class="card-name">루위안 (陸園)</div>
+        <div class="card-name-cn">Lu Yuan · 서구 일대</div>
+        <span class="card-cuisine">장저(江浙) 가정요리</span>
+        <p class="card-desc">30년 이상 경력 주방팀이 이어가는 클래식 장저 가정식. 정확한 화력과 불 조절로 완성하는 깊은 맛. 파기름 붕어조림, 닝보식 볶음장어가 미슐랭 평가원을 매료.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">파기름 붕어조림 — 알 가득, 뼈 바삭</span><span class="star">★ 필수</span></div>
           <div class="menu-item"><span class="dish">닝보식 볶음장어 (寧波炒鱔)</span><span class="star">★ 추천</span></div>
           <div class="menu-item"><span class="dish">수세미 건관자 (絲瓜干貝)</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">점심·저녁 영업<br>예약 문의 권장</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$400–800</span></div>
-          <div class="rest-info-item"><span class="ico">📍</span><span class="txt">서구 일대<br>미슐랭 가이드 참조</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">미슐랭 빕구르망<br>연속 선정</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>점심·저녁 영업<br>방문 전 확인 권장</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$400–800</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>미슐랭 빕구르망<br>연속 선정</span></div>
+          <div class="info-item"><span class="ico">📍</span><span>서구 — 미슐랭 앱<br>위치 확인 권장</span></div>
         </div>
-        <a class="rest-map-btn" href="https://guide.michelin.com/tw/en/taichung-region/taichung/restaurants/bib-gourmand" target="_blank" rel="noopener">
-          📍 미슐랭 공식 페이지에서 확인
-        </a>
+        <a class="map-btn" href="https://guide.michelin.com/tw/en/taichung-region/taichung/restaurants/bib-gourmand" target="_blank" rel="noopener">📍 미슐랭 공식에서 확인</a>
       </div>
     </div>
 
-    <!-- 9. 창창키친 -->
-    <div class="rest-card" data-cuisine="분식">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 09</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">창창키친 (長長廚房)</div>
-        <div class="rest-name-cn">Chang Chang Kitchen · 타이중 시내</div>
-        <span class="rest-cuisine">우육면 전문</span>
-        <p class="rest-desc">전직 프렌치 레스토랑 셰프가 서양 기법을 접목해 재해석한 우육면 전문점. 미야자키 와규와 가는 면을 쓰는 맑은 탕면과, 캐나다산 소갈비에 굵은 면을 매칭한 홍소 탕면이 양대 메뉴. 국물은 10시간 이상 저온 조리. 면은 이탈리아 밀가루를 혼합해 맞춤 제작.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
+    <!-- 09 창창키친 -->
+    <div class="rest-card" data-c="면·분식">
+      <div class="card-head"><span class="card-num">No.09</span></div>
+      <div class="card-body">
+        <div class="card-name">창창키친 (長長廚房)</div>
+        <div class="card-name-cn">Chang Chang Kitchen · 타이중 시내</div>
+        <span class="card-cuisine">프렌치식 우육면</span>
+        <p class="card-desc">전직 프렌치 셰프가 서양 기법으로 재해석한 우육면 전문점. 국물은 10시간 이상 저온 조리. 미야자키 와규 맑은 탕면, 캐나다산 갈비 홍소 탕면 양대 메뉴.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
           <div class="menu-item"><span class="dish">와규 맑은 탕면 (清燉牛肉麵)</span><span class="star">★ 필수</span></div>
-          <div class="menu-item"><span class="dish">갈비 홍소 탕면 (紅燒牛肉麵) + 트러플 칠리소스</span><span class="star">★ 인기</span></div>
-          <div class="menu-item"><span class="dish">사이드 메뉴 다수</span></div>
+          <div class="menu-item"><span class="dish">갈비 홍소 탕면 + 트러플 칠리소스</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">다양한 사이드 메뉴</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">점심·저녁 영업<br>방문 전 확인 권장</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$350–600</span></div>
-          <div class="rest-info-item"><span class="ico">📍</span><span class="txt">타이중 시내<br>미슐랭 가이드 참조</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">미슐랭 빕구르망<br>선정</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>점심·저녁 영업<br>방문 전 확인 권장</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$350–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>미슐랭 빕구르망<br>선정</span></div>
+          <div class="info-item"><span class="ico">📍</span><span>타이중 시내</span></div>
         </div>
-        <a class="rest-map-btn" href="https://guide.michelin.com/tw/en/taichung-region/taichung/restaurants/bib-gourmand" target="_blank" rel="noopener">
-          📍 미슐랭 공식 페이지에서 확인
-        </a>
+        <a class="map-btn" href="https://guide.michelin.com/tw/en/taichung-region/taichung/restaurants/bib-gourmand" target="_blank" rel="noopener">📍 미슐랭 공식에서 확인</a>
       </div>
     </div>
 
-    <!-- 10. 푸쥬안위안 -->
-    <div class="rest-card" data-cuisine="대만요리">
-      <div class="rest-card-header">
-        <span class="rest-num">No. 10</span>
-      </div>
-      <div class="rest-card-body">
-        <div class="rest-name">푸쥬안위안 족발 (扶剪園)</div>
-        <div class="rest-name-cn">Fu Juang Yuan · 타이중 시내</div>
-        <span class="rest-cuisine">대만 족발 전문</span>
-        <p class="rest-desc">50년 이상의 역사를 가진 3대 가족 운영 족발 전문점. 간장·빙탕·고추·파로 만든 육수를 하루 종일 보글보글 끓여 독특한 풍미를 만들어냅니다. 오전 11시 이전에 문을 닫는 특이한 영업 형태. 현지인들에게 수십 년간 사랑받는 조식 명소.</p>
-        <div class="rest-menu">
-          <h4>🌟 인기 메뉴</h4>
-          <div class="menu-item"><span class="dish">족발 (豬腳) — 간장 황금육수</span><span class="star">★ 필수</span></div>
-          <div class="menu-item"><span class="dish">블랜치드 면 + 브레이즈드 돼지고기 소스</span><span class="star">★ 인기</span></div>
-          <div class="menu-item"><span class="dish">각종 사이드 수프</span></div>
+    <!-- 10 푸쥬안위안 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.10</span></div>
+      <div class="card-body">
+        <div class="card-name">푸쥬안위안 족발 (扶剪園)</div>
+        <div class="card-name-cn">Fu Juang Yuan · 서구 메이춘로 1단 203호</div>
+        <span class="card-cuisine">대만 족발 전문</span>
+        <p class="card-desc">50년 이상 역사 3대 가족 운영 족발 명가. 하루 종일 끓이는 간장·빙탕·고추·파 황금 육수가 비결. 오전에 문을 닫는 특이한 영업 형태, 현지인 조식 명소.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">족발 (豬腳) 황금 육수</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">비빔면 + 돼지고기 소스</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">각종 수프</span></div>
         </div>
       </div>
-      <div class="rest-card-footer">
-        <div class="rest-info">
-          <div class="rest-info-item"><span class="ico">🕐</span><span class="txt">이른 아침–정오<br>(오전 영업만)</span></div>
-          <div class="rest-info-item"><span class="ico">💰</span><span class="txt">1인 NT$100–250</span></div>
-          <div class="rest-info-item"><span class="ico">📍</span><span class="txt">타이중 시내<br>미슐랭 가이드 참조</span></div>
-          <div class="rest-info-item"><span class="ico">⭐</span><span class="txt">미슐랭 빕구르망<br>연속 선정</span></div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>이른 아침–정오<br>오전 영업만</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$100–250</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>미슐랭 빕구르망<br>연속 선정</span></div>
+          <div class="info-item"><span class="ico">📍</span><span>서구 메이춘로</span></div>
         </div>
-        <a class="rest-map-btn" href="https://guide.michelin.com/tw/en/taichung-region/taichung/restaurants/bib-gourmand" target="_blank" rel="noopener">
-          📍 미슐랭 공식 페이지에서 확인
-        </a>
+        <a class="map-btn" href="https://maps.google.com/?q=24.147,120.6636" target="_blank" rel="noopener">📍 Google Maps</a>
       </div>
     </div>
 
-  </div><!-- /restaurant-grid -->
-
-  <!-- 안내 박스 -->
-  <div style="margin-top:40px;padding:20px 24px;background:var(--paper-warm);border:1px solid var(--border);border-radius:3px;">
-    <h3 style="font-family:'Noto Serif KR',serif;font-size:15px;font-weight:700;color:var(--bib);margin-bottom:10px;">📋 전체 23곳 리스트 (2025 미슐랭 가이드 타이완 기준)</h3>
-    <p style="font-size:13px;color:var(--ink-mid);line-height:1.8;margin-bottom:12px;">
-      위 10곳 외에도 타이중에는 다음 레스토랑들이 2025 빕구르망에 선정되어 있습니다:
-    </p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;">
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🍜 Dong Shan Zhan (東山棧)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🥟 Peng Cheng Tang (彭城堂)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🍚 Wen Tao (文濤)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🍜 A Kun's Noodles (阿坤麵)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🍲 TK Congee (粥品)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🥩 Shang Niu Er Guan Beef Soup</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🍜 Shanghai Wei Ming Noodles</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🍛 Gubami (구바미)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🥗 1924 Restaurant</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🍚 Jing Hua Yan Yun (京華宴韻)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🐟 Hu She Yu Wei (湖社魚味)</div>
-      <div style="font-size:12px;color:var(--ink-mid);padding:6px 10px;background:var(--white);border:1px solid var(--border);border-radius:2px;">🦢 Feng Chi Goose (豐橋鵝)</div>
+    <!-- 11 동산잔 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.11</span></div>
+      <div class="card-body">
+        <div class="card-name">동산잔 (東山棧)</div>
+        <div class="card-name-cn">Dong Shan Zhan · 베이툰구 동산로 1단 380호</div>
+        <span class="card-cuisine">대만 숯불 구이</span>
+        <p class="card-desc">1999년부터 영업. 용안나무 숯불에 1시간 동안 구워낸 닭구이가 타이중 최고 명성. 바삭한 껍질과 촉촉한 속살이 특징. 테이블에서 서버가 닭을 직접 찢어서 서빙.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">용안나무 숯불 닭구이</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">취한 새우 (醉蝦)</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">닭육수 죽순 볶음</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–21:30<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$300–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.3 (10,020 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2437 8772</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1766848,120.7288766" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
     </div>
-    <p style="margin-top:14px;font-size:12px;color:var(--ink-light);">
-      전체 최신 리스트는 
-      <a href="https://guide.michelin.com/kr/ko/taichung-region/restaurants/bib-gourmand" target="_blank" rel="noopener" style="color:var(--bib);text-decoration:none;font-weight:600;">미슐랭 가이드 공식 웹사이트 ↗</a>
-      에서 확인하세요.
+
+    <!-- 12 부귀정 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.12</span></div>
+      <div class="card-body">
+        <div class="card-name">부귀정 (富貴亭)</div>
+        <div class="card-name-cn">Fu Gui Ting · 중구 삼민로 2단 18항 31호</div>
+        <span class="card-cuisine">대만 훈제 거위</span>
+        <p class="card-desc">60년 이상 역사의 타이중 현지인 추억의 맛집. 당귀 한약재를 넣고 끓인 거위 국물이 시그니처. 훈제 거위는 보통 30분 이내에 매진되므로 일찍 방문 필수.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">거위 국수 (鵝肉麵) — 당귀 육수</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">훈제 거위 (燻鵝) — 30분 내 매진</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">오리 요리·찹쌀</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–20:00<br>일요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$100–250</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.3 (1,548 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2227 3001</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.140145699999998,120.67824339999999" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 13 동방룡 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.13</span></div>
+      <div class="card-body">
+        <div class="card-name">동방룡 (東方龍)</div>
+        <div class="card-name-cn">Orient Dragon · 난툰구 공익로 2단 271-1호</div>
+        <span class="card-cuisine">대만·쓰촨 융합 요리</span>
+        <p class="card-desc">타이완 가정식과 쓰촨 요리가 조화를 이루는 레스토랑. 쓰촨식 마쓰사카 돼지고기 삼배구, 찐 청황조기, 벚꽃 새우 볶음밥이 미슐랭 평가원의 호평을 받음.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">마쓰사카 쓰촨 돼지 삼배구</span><span class="star">★ 시그니처</span></div>
+          <div class="menu-item"><span class="dish">찐 청황조기 (蒸四指鱸)</span><span class="star">★ 추천</span></div>
+          <div class="menu-item"><span class="dish">벚꽃 새우 볶음밥</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:30–14:30 / 17:30–21:30<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$300–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.5 (2,785 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2252 3366</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1509042,120.64292379999999" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 14 펑청당 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.14</span></div>
+      <div class="card-body">
+        <div class="card-name">펑청당 (彭城堂)</div>
+        <div class="card-name-cn">Peng Cheng Tang · 타이핑구 이창로 377호</div>
+        <span class="card-cuisine">대만 가정식</span>
+        <p class="card-desc">빈티지 소품으로 장식된 1960년대 분위기의 레스토랑. 고추쌈(구아바오) 세트와 마데이라 덩굴 소고기 볶음이 미슐랭 인스펙터 최애 메뉴. 아늑한 시골집 분위기.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">구아바오 세트 (刈包) 고추쌈</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">마데이라 덩굴 소고기 볶음</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">각종 가정식 볶음 요리</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:30–14:00 / 17:30–21:00<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$250–500</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.5 (4,889 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2351 1122</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1448417,120.7136698" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 15 온도 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.15</span></div>
+      <div class="card-body">
+        <div class="card-name">원타오 (溫叨)</div>
+        <div class="card-name-cn">Wen Tao · 베이툰구 타이위안로 3단 191호</div>
+        <span class="card-cuisine">대만 전통 요리</span>
+        <p class="card-desc">야외 정원이 있는 타이중 북구의 개방형 레스토랑. 용안나무 숯불 구이 닭이 대표 메뉴로 반드시 전화 예약 필수. 깊은 감칠맛의 요리들이 미슐랭 인스펙터를 매료.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">숯불 구이 닭 — 전화 예약 필수</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">발효 고추 찐 강어 (蒸河鱸)</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">가마솥 닭 · 새우 요리</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–14:00 / 17:00–21:30<br>매일 영업</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$300–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.7 (4,233 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2231 1699</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.165327,120.6915516" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 16 산시식당 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.16</span></div>
+      <div class="card-body">
+        <div class="card-name">산시식당 (三喜食堂)</div>
+        <div class="card-name-cn">San Xi Shih Tang · 난툰구 공익로 2단 935호</div>
+        <span class="card-cuisine">대만·후난 가정식</span>
+        <p class="card-desc">오너 셰프의 자택을 개조한 단독 정원 주택. 1950년대 시골 할머니 집 느낌. 대만 요리 외 후난·신장 요리도 함께 선보임. 메뉴 사전 문의 권장.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">발효 고추 강어 볶음</span><span class="star">★ 시그니처</span></div>
+          <div class="menu-item"><span class="dish">드럼통 닭 — 정원 숯불, 사전 예약 필수</span><span class="star">★ 추천</span></div>
+          <div class="menu-item"><span class="dish">다양한 제철 가정식</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:30–14:00 / 17:00–21:30<br>월·화 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$300–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 3.8 (50 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2473 1778</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1515025,120.6268568" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 17 아쿤몐 -->
+    <div class="rest-card" data-c="면·분식">
+      <div class="card-head"><span class="card-num">No.17</span></div>
+      <div class="card-body">
+        <div class="card-name">아쿤몐 (阿坤麵)</div>
+        <div class="card-name-cn">A Kun Mian · 중구 핑등가 142호</div>
+        <span class="card-cuisine">타이중식 조식 면</span>
+        <p class="card-desc">50년 이상 된 3대 가족 운영 노포. 타이중에서만 맛볼 수 있는 스타일의 조식 면 전문. 데친 면에 돼지고기 브레이즈 소스와 파기름을 얹어먹는 것이 필수.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">브레이즈 소스 비빔면 — 달달한 칠리소스 필수</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">유리 만두 수프 · 어묵</span><span class="star">★ 세트</span></div>
+          <div class="menu-item"><span class="dish">두부·선지 사이드</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>이른 아침–오전 영업<br>정오 전 마감</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$50–150<br>초저가</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.2 (2,133 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 955 923 877</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1430211,120.6824192" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 18 진치위안 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.18</span></div>
+      <div class="card-body">
+        <div class="card-name">진치위안 (錦致園)</div>
+        <div class="card-name-cn">Chin Chih Yuan · 중구 청공로 170호</div>
+        <span class="card-cuisine">대만 쌀 요리</span>
+        <p class="card-desc">1978년 창업, 타이중 중구의 쌀 요리 전문점. 부드러운 골풀 주머니에 쪄낸 밥에 특제 절임 채소를 얹어 먹는 방식. 황금 튀김 돼지갈비·사차 소스 소고기도 인기.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">절임 채소 쌀밥 — 향긋한 감칠맛</span><span class="star">★ 시그니처</span></div>
+          <div class="menu-item"><span class="dish">황금 튀김 돼지갈비</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">사차 소스 소고기</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:00–19:30<br>목요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$150–350</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.1 (4,540 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2220 7388</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1413509,120.6824544" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 19 타이커 죽 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.19</span></div>
+      <div class="card-body">
+        <div class="card-name">타이커 고기죽 (台客燒肉粥)</div>
+        <div class="card-name-cn">Tai Ke Meat Congee · 난툰구 우취안서로 2단 722-1호</div>
+        <span class="card-cuisine">대만 죽·솥밥</span>
+        <p class="card-desc">오너 할아버지가 50년 전 시작한 죽 노점에서 출발. 돼지·닭 뼈를 몇 시간 삶아낸 깊은 죽이 베이스. 조개·소고기·생선 중 원하는 재료를 골라 넣는 방식.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">자기 취향 재료 고기죽</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">양념 튀김 돼지 삼겹살</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">루러우판 · 찹쌀 소시지</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:30–23:00<br>수요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$150–350</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.6 (6,151 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2389 0880</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1427083,120.6373363" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 20 상니우얼관 -->
+    <div class="rest-card" data-c="대만">
+      <div class="card-head"><span class="card-num">No.20</span></div>
+      <div class="card-body">
+        <div class="card-name">상니우 2관 (尚牛二館)</div>
+        <div class="card-name-cn">Shang Niu 2 · 베이툰구 산시로 3단 153호</div>
+        <span class="card-cuisine">생육(生肉) 샤부샤부</span>
+        <p class="card-desc">냉동하지 않은 신선 소고기(溫體牛肉) 샤부샤부 전문점. 3초 살짝 데쳐먹는 것이 공식 추천법. 예약 불가, 줄 대기 필수. 평일 저녁에도 대기가 길 수 있음.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">원티 소고기 샤부 — 3초 데쳐 먹기</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">소고기 완자 — 탱탱한 식감</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">원티 소고기 다양한 부위</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>16:00–22:00<br>월요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$400–800</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.4 (3,052 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2422 9192</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1856777,120.6847957" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 21 상하이 웨이밍 면 -->
+    <div class="rest-card" data-c="면·분식">
+      <div class="card-head"><span class="card-num">No.21</span></div>
+      <div class="card-body">
+        <div class="card-name">상하이 웨이밍 면 (上海未名麵點)</div>
+        <div class="card-name-cn">Shanghai Wei Ming · 중구 스푸로 69호</div>
+        <span class="card-cuisine">상하이식 면·만두</span>
+        <p class="card-desc">방부제 없는 정통 상하이식 면 수프를 판매하는 소박한 아침 전문 노점. 돼지갈비·소고기·자장으로 먹는 면국수, 오전에만 운영하며 일찍 품절.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">돼지갈비 면 수프</span><span class="star">★ 시그니처</span></div>
+          <div class="menu-item"><span class="dish">소고기 면 · 자장 면</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">절임 매실 사이드 (酸梅湯)</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>07:00–13:30<br>월·화·일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$60–150<br>초저가</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.0 (2,196 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2225 0377</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1396658,120.68005579999999" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 22 구바미 -->
+    <div class="rest-card" data-c="면·분식">
+      <div class="card-head"><span class="card-num">No.22</span></div>
+      <div class="card-body">
+        <div class="card-name">구바미 (Gubami)</div>
+        <div class="card-name-cn">서구 춘중가 46호</div>
+        <span class="card-cuisine">프렌치식 우육면</span>
+        <p class="card-desc">전 르무 파인 다이닝 오너 셰프 란수 천이 운영하는 프리미엄 우육면 전문점. 프렌치 꽁소메 방식으로 준비한 맑은 탕면(미야자키 와규)과 홍소 탕면(캐나다 갈비) 두 가지가 전부.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">맑은 와규 탕면 + 훈제 골수 추가 추천</span><span class="star">★ 필수</span></div>
+          <div class="menu-item"><span class="dish">홍소 갈비 탕면 + 트러플 칠리소스</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">매일 바뀌는 사이드 요리</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>점심·저녁 영업<br>방문 전 확인 권장</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$400–700</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.1 (211 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2376 3801</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.1417112,120.6583931" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <!-- 23 경화연운 (베이징) -->
+    <div class="rest-card" data-c="베이징">
+      <div class="card-head"><span class="card-num">No.23</span></div>
+      <div class="card-body">
+        <div class="card-name">경화연운 (京華煙雲)</div>
+        <div class="card-name-cn">Jing Hua Yan Yun · 서구 우취안7가 57호</div>
+        <span class="card-cuisine">베이징 요리</span>
+        <p class="card-desc">타이중의 정통 베이징 요리 레스토랑. 오스만투스 생선 요리, 새우 유탸오, 버섯·호박 볶음 등 다양한 중국 각지 요리를 두루 선보이는 아늑한 공간.</p>
+        <div class="menu-title">🌟 인기 메뉴</div>
+        <div class="menu-list">
+          <div class="menu-item"><span class="dish">새우 유탸오 (蝦油條) — 바삭한 식감</span><span class="star">★ 시그니처</span></div>
+          <div class="menu-item"><span class="dish">오스만투스 생선 — 달콤 새콤</span><span class="star">★ 인기</span></div>
+          <div class="menu-item"><span class="dish">버섯·박 볶음</span></div>
+        </div>
+      </div>
+      <div class="card-foot">
+        <div class="info-grid">
+          <div class="info-item"><span class="ico">🕐</span><span>11:30–14:00 / 17:30–21:00<br>화요일 휴무</span></div>
+          <div class="info-item"><span class="ico">💰</span><span>1인 NT$300–600</span></div>
+          <div class="info-item"><span class="ico">⭐</span><span>★ 4.0 (1,347 리뷰)</span></div>
+          <div class="info-item"><span class="ico">📞</span><span>+886 4 2372 5066</span></div>
+        </div>
+        <a class="map-btn" href="https://maps.google.com/?q=24.135016,120.6632085" target="_blank" rel="noopener">📍 Google Maps</a>
+      </div>
+    </div>
+
+  </div><!-- /grid -->
+
+  <!-- 추가 안내 -->
+  <div style="margin-top:40px;padding:20px 24px;background:var(--bib-pale);border:1px solid rgba(232,64,26,.2);border-radius:3px;">
+    <p style="font-size:13px;color:var(--ink-mid);line-height:1.8;">
+      ⚠️ <strong>주의:</strong> 영업시간·메뉴·가격은 변경될 수 있습니다. 방문 전 Google Maps 또는 미슐랭 공식 앱에서 최신 정보를 확인하세요.<br>
+      📌 전체 최신 리스트: <a href="https://guide.michelin.com/kr/ko/taichung-region/restaurants/bib-gourmand" target="_blank" style="color:var(--bib);font-weight:600;">미슐랭 가이드 공식 웹사이트 ↗</a>
     </p>
   </div>
 
 </div><!-- /container -->
 
 <footer>
-  <p>🇹🇼 미슐랭 가이드 타이완 2025 · 타이중 빕구르망 선정 레스토랑</p>
-  <p style="margin-top:6px;">출처: <a href="https://guide.michelin.com/tw/en" target="_blank" rel="noopener" style="color:var(--bib);">guide.michelin.com</a> · 영업시간·메뉴는 변경될 수 있으니 방문 전 확인 권장</p>
+  <p>🇹🇼 미슐랭 가이드 타이완 2025 · 타이중 빕구르망 23곳 완전 수록</p>
+  <p style="margin-top:6px;">출처: <a href="https://guide.michelin.com/tw/en" target="_blank">guide.michelin.com</a> · 2025 8th Edition</p>
 </footer>
 
 <script>
-  /* SVG 마커 클릭 */
-  function openBibMap(el){ window.open(el.dataset.url,'_blank','noopener'); }
-
-  /* 툴팁 */
-  const tooltip = document.getElementById('bib-tooltip');
-  document.querySelectorAll('.map-marker').forEach(m => {
-    m.addEventListener('mouseenter',()=>{ tooltip.childNodes[0].textContent=m.dataset.name; tooltip.style.display='block'; });
-    m.addEventListener('mousemove',e=>{ tooltip.style.left=(e.clientX+14)+'px'; tooltip.style.top=(e.clientY-10)+'px'; });
-    m.addEventListener('mouseleave',()=>{ tooltip.style.display='none'; });
+function filter(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.rest-card').forEach(card => {
+    card.style.display = (cat === 'all' || card.dataset.c === cat) ? 'flex' : 'none';
   });
-
-  /* 필터 */
-  function filterCards(cat, btn){
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.rest-card').forEach(card=>{
-      if(cat==='all'||card.dataset.cuisine===cat) card.style.display='flex';
-      else card.style.display='none';
-    });
-  }
+}
 </script>
 </body>
 </html>
